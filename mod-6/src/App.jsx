@@ -5,6 +5,7 @@ import './App.css'
 import React from 'react'
 import Greeting from './Components/Greeting'
 import Emoji from './Components/Emoji'
+import SingleCat from './Components/SingleCat'
 
 function App() {
   const [count, setCount] = useState(0)

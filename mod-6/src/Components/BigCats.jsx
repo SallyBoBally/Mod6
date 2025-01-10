@@ -1,3 +1,5 @@
+import SingleCat from "./SingleCat";
+
 const cats = [
     { id: 1, name: 'Cheetah', latinName: 'Acinonyx jubatus', image: 'https://bloximages.newyork1.vip.townnews.com/nrtoday.com/content/tncms/assets/v3/editorial/a/c9/ac96d05a-259a-11ee-8541-afe5f0192d3d/64b6dcca8f26a.image.jpg?resize=750%2C500' },
     { id: 2, name: 'Cougar', latinName: 'Puma concolor', image: 'https://britishcolumbia.com/wp-content/uploads/2024/09/cougar.jpg' },
@@ -25,14 +27,11 @@ const BigCats = () => {
         setCatList(cats);
     };
     return (
-        <div style={{ padding: '10px', fontFamily: 'Arial, sans-serif' }}>
-            <h1>Big Cats</h1>
-            <ul style={{ listStyle: 'none', padding: 0 }}>
-                {cats.map(cat => (
-                    <SingleCat key={cat.id} cat={cat} />
-                ))}
-            </ul>
-        </div>
+            <><h1>Big Cats</h1><ul style={{ listStyle: 'none', padding: 0 }}>
+            {cats.map(cat => (
+                <SingleCat key={cat.id} cat={cat} />
+            ))}
+        </ul></>
     );
 };
 
